@@ -1,3 +1,10 @@
 version: "2"
 domain: cluster.x-k8s.io
 repo: github.com/FELDSAM-INC/cluster-api-provider-one
+resources:
+- group: infrastructure
+  version: v1beta1
+  kind: OneCluster
+- group: infrastructure
+  version: v1beta1
+  kind: OneMachine
