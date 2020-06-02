@@ -35,6 +35,7 @@ type OneMachineReconciler struct {
 
 // +kubebuilder:rbac:groups=infrastructure.cluster.x-k8s.io,resources=onemachines,verbs=get;list;watch;create;update;patch;delete
 // +kubebuilder:rbac:groups=infrastructure.cluster.x-k8s.io,resources=onemachines/status,verbs=get;update;patch
+// +kubebuilder:rbac:groups=cluster.x-k8s.io,resources=clusters;clusters/status,verbs=get;list;watch
 
 func (r *OneMachineReconciler) Reconcile(req ctrl.Request) (ctrl.Result, error) {
 	_ = context.Background()
